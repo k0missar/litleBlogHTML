@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: "Heebo";
+  color: #21243D;
+}
+
+.container {
+  min-height: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 47px;
+}
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  margin-left: 148px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #21243D;
+}
+
+.header__menu li {
+  margin-right: 60px;
+  display: inline-block;
+}
+
+.header__menu a, .header__menu a:visited, .header__menu a:hover {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 140px 149px 71px 148px;
+}
+
+.header__text h1 {
+  margin-bottom: 40px;
+  max-width: 506px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.header__text > p {
+  max-width: 497px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+}
+
+.header__btn {
+  margin-top: 38px;
+  width: 208px;
+  background: #ff6464;
+  border-radius: 2px;
+  padding: 9px 21px 17px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #fff;
+}
+
+.header__img {
+  width: 243px;
+  height: 243px;
+}
+
+.header__img img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 10px #edf7fa;
+  box-shadow: 0px 0px 0px 10px #edf7fa;
+}
+
+.popular-post {
+  background: #edf7fa;
+  padding: 0 148px;
+}
+
+.popular-post__title {
+  margin: 7px 0 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-post__title p:nth-child(1) {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.popular-post__title a, .popular-post__title a:visited, .popular-post__title a:hover {
+  display: inline-block;
+  padding-top: 20px;
+  text-align: right;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00a8cc;
+}
+
+.popular-post__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-post__card {
+  width: 418px;
+  margin-bottom: 32px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 10px rgba(187, 255, 250, 0.25);
+          box-shadow: 0px 4px 10px rgba(187, 255, 250, 0.25);
+}
+
+.popular-post__card h2 {
+  margin: 24px 21px 17px 23px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.popular-post__date {
+  margin: 17px 21px 11px 23px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.popular-post__p-content {
+  margin: 0 27px 7px 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.last-content {
+  margin-bottom: 83px;
+  padding: 0 148px;
+}
+
+.last-content__title {
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.last-content__category-title h2 {
+  margin-top: 90px;
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+
+.last-content__card {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 31px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.last-content__card:nth-child(2) {
+  padding-top: 0px;
+}
+
+.last-content__thumbnail img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+}
+
+.last-content__content {
+  margin-left: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.last-content__content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.last-content__content p {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.last-content__date {
+  display: inline-block;
+  margin-top: 10px;
+  background: #142850;
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.last-content__category {
+  display: inline-block;
+  margin-left: 26px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695a4;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer__social-ico img {
+  margin: 51px 35px 26px 0;
+}
+
+.footer__social-ico img:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.footer__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 54px;
+}
+
+.posts {
+  margin-top: 78px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.posts h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 50px;
+}
+
+.posts h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.posts h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.posts__data {
+  border-radius: 16px;
+  background: #ff7c7c;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.posts__category {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}

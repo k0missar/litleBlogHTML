@@ -1,0 +1,218 @@
+@import 'default.scss';
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+
+$ffamily-default: 'Heebo';
+
+@mixin fonts-default ($fw, $fz, $lh) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+}
+
+body {
+    font-family: $ffamily-default;
+    color: #21243D;
+}
+
+.container {
+    min-height: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 47px;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-left: 148px;
+        @include fonts-default (700, 20px, 27px);
+        color:#21243D
+    }
+    &__menu {
+        li {
+            margin-right: 60px;
+            display: inline-block;
+        }
+        a, a:visited, a:hover {
+            @include fonts-default (500, 20px, 27px);
+            color: #000;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 140px 149px 71px 148px;
+    }
+    &__text {
+        h1 {
+            margin-bottom: 40px;
+            max-width: 506px;
+            @include fonts-default (700, 44px, 60px);
+            color:#21243D
+        }
+        >p {
+            max-width: 497px;
+            @include fonts-default (400, 16px, 24px);
+            color: #21243D
+        }
+    }
+    &__btn {
+        margin-top: 38px;
+        width: 208px;
+        background: #ff6464;
+        border-radius: 2px;
+        padding: 9px 21px 17px 20px;
+        @include fonts-default (500, 20px, 29px);
+        color: #fff;
+    }
+    &__img {
+        width: 243px;
+        height: 243px;
+        img {
+            width: 100%;
+            border-radius: 50%;
+            -webkit-box-shadow: 0px 0px 0px 10px rgba(237, 247, 250, 1);
+            -moz-box-shadow: 0px 0px 0px 10px rgba(237, 247, 250, 1);
+            box-shadow: 0px 0px 0px 10px rgba(237, 247, 250, 1);
+        }
+    }
+}
+.popular-post {
+    background: #edf7fa;
+    padding: 0 148px;
+    &__title {
+        margin: 7px 0 2px;
+        display: flex;
+        justify-content: space-between;
+        p:nth-child(1) {
+            @include fonts-default (400, 22px, 60px)
+        }
+        a, a:visited, a:hover {
+            display: inline-block;
+            padding-top: 20px;
+            text-align: right;
+            @include fonts-default (400, 16px, 24px);
+            color: #00a8cc;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 418px;
+        margin-bottom: 32px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 4px 10px rgba(187, 255, 250, 0.25);
+        h2 {
+            margin: 24px 21px 17px 23px;
+            @include fonts-default (700, 26px, 38px);
+        }
+    }
+    &__date {
+        margin: 17px 21px 11px 23px;
+        @include fonts-default (400, 18px, 26px);
+    }
+    &__p-content {
+        margin: 0 27px 7px 23px;
+        @include fonts-default (400, 16px, 24px);
+    }
+}
+.last-content {
+    margin-bottom: 83px;
+    padding: 0 148px;
+    &__title {
+        margin-bottom: 22px;
+        @include fonts-default (400, 22px, 60px);
+    }
+    &__category-title h2 {
+        margin-top: 90px;
+        margin-bottom: 25px;
+        @include fonts-default (900, 44px, 60px);
+    }
+    &__card {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 31px 0 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card:nth-child(2) {
+        padding-top: 0px;
+    }
+    &__thumbnail {
+        img {
+            width: 246px;
+            height: 180px;
+            border-radius: 6px;
+        }
+    }
+    &__content {
+        margin-left: 18px;
+        @include fonts-default (400, 16px, 24px);
+        h2 {
+            @include fonts-default (700, 30px, 44px);
+        }
+        p {
+            margin-top: 22px;
+            @include fonts-default (400, 16px, 24px);
+        }
+    }
+    &__date {
+        display: inline-block;
+        margin-top: 10px;
+        background: #142850;
+        width: 62px;
+        height: 25px;
+        border-radius: 16px;
+        font-weight: 900;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+    }
+    &__category {
+        display: inline-block;
+        margin-left: 26px;
+        @include fonts-default (400, 20px, 29px);
+        color: #8695a4;
+    }
+}
+.footer {
+    text-align: center;
+    &__social-ico {
+        img {
+            margin: 51px 35px 26px 0;
+        }
+        img:nth-last-child(1) {
+            margin-right: 0;
+        }
+    }
+    &__info {
+        @include fonts-default (400, 14px, 21px);
+        padding-bottom: 54px;
+    }
+}
+.posts {
+    margin-top: 78px;
+    @include fonts-default (400, 16px, 21px);
+    h1 {
+        @include fonts-default (700, 34px, 50px);
+    }
+    h2 {
+        @include fonts-default (500, 30px, 60px);
+    }
+    h3 {
+        @include fonts-default (500, 24px, 60px);
+    }
+    &__data {
+        border-radius: 16px;
+        background: #ff7c7c;
+        @include fonts-default (900, 18px, 60px);
+    }
+    &__category {
+        @include fonts-default (400, 20px, 29px);
+    }
+}
